@@ -1,0 +1,142 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1em;
+}
+
+/* Navigation */
+nav {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #36d1dc;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #5b86e5;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #36d1dc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.skills li:hover {
+  background: #5b86e5;
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+}
+
+#contact a {
+  color: #5b86e5;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+}
